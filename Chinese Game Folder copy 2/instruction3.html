@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Instruction</title>
+    <link rel="stylesheet" href="instructioer4.css">
+    <script src="insructioner4.js"></script>
+  </head>
+  <body>
+    <h1>这是游戏的说明！</h1>
+    <p>你需要看图片，会有 4 个给定的选择。您需要选择正确的一个才能继续。如果有错误，则游戏将停止.</p>
+    <p>例如：</p>
+    <h2>这张图片的汉字是什么？</h2>
+    <img src="https://images.immediate.co.uk/production/volatile/sites/30/2020/08/knife-head_0-e1436fc.png" alt="Example Image" class="centered-image">
+    <div class="button-container">
+      <div class="container2">
+        <button id="container1Btn">刀</button>
+        <script>
+          const container1Btn = document.getElementById("container1Btn");
+          container1Btn.addEventListener("click", function() {
+            window.location.href = "instructer3.html";
+          });
+        </script>
+        <div class="container4">
+          <button id="container4Btn_1">道</button>
+          <script>
+            const container4Btn_1 = document.getElementById("container4Btn_1");
+            container4Btn_1.addEventListener("click", function() {
+              window.location.href = "instruction2.html";
+            });
+          </script>
+        </div>
+      </div>
+      <div class="container3">
+        <button id="container3Btn">到</button>
+      </div>
+      <script>
+        const container3Btn = document.getElementById("container3Btn");
+        container3Btn.addEventListener("click", function() {
+          window.location.href = "instruction2.html";
+        });
+      </script>
+      <div class="container5">
+        <button id="container4Btn_2">岛</button>
+      </div>
+      <script>
+        const container4Btn_2 = document.getElementById("container4Btn_2");
+        container4Btn_2.addEventListener("click", function() {
+          window.location.href = "instruction2.html";
+        });
+      </script>
+    </div>
+    <div class="container">
+      <button id="instruction-btn">下一个</button>
+    </div>
+    <script>
+      const instructionBtn = document.getElementById("instruction-btn");
+      instructionBtn.addEventListener("click", function() {
+        window.location.href = "Real.html";
+      });
+    </script>
+    <div class="footer">Created by Youngjin. It shouldn't be copied or reproduced in any way. 2023© All rights reserved</div>
+  </body>
+</html>

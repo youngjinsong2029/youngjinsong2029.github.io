@@ -1,0 +1,39 @@
+h1 {
+    font-size: large;
+    text-align: center;
+    font-family: Verdana , sans-serif;
+}
+
+p {
+    font-size: large;
+    text-align: center;
+    font-family: Verdana , sans-serif;
+}
+
+.Y {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: 25vh;
+    background-size: cover;
+    width: 200px;
+    height: 50px;
+    margin: auto;
+    background-color: skyblue;
+  }
+  .header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: #f5f5f5;
+    padding: 10px;
+    text-align: center;
+   
+    border: black;
+  }
+
+  body {
+    background-color: pink;
+  }

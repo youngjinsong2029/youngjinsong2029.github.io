@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Instruction</title>
+    <link rel="stylesheet" href="part1-6.css">
+    <script src="part1-6.js"></script>
+    <script>
+      function shuffleButtons() {
+        const buttonContainer = document.querySelector('.button-container');
+        for (let i = buttonContainer.children.length; i >= 0; i--) {
+          buttonContainer.appendChild(buttonContainer.children[Math.random() * i | 0]);
+        }
+      }
+    </script>
+  </head>
+  <body onload="shuffleButtons()">
+    <h1>Second Question!</h1>
+    <h2>What is the proper use of the sentence structure?</h2>
+    <h3>......得......</h3>
+    <div class="button-container">
+      <div class="container2">
+        <button id="container1Btn">奶奶告诉妹妹,表哥说的对。</button>
+        <script>
+          const container1Btn = document.getElementById("container1Btn");
+          container1Btn.addEventListener("click", function() {
+            window.location.href = "part1-3.html";
+          });
+        </script>
+        <div class="container4">
+          <button id="container4Btn_1">我和妈妈，好的高兴</button>
+          <script>
+            const container4Btn_1 = document.getElementById("container4Btn_1");
+            container4Btn_1.addEventListener("click", function() {
+              window.location.href = "part1-3.html";
+            });
+          </script>
+        </div>
+      </div>
+      <div class="container3">
+        <button id="container3Btn">小王和他的爸爸，好运气的</button>
+      </div>
+      <script>
+        const container3Btn = document.getElementById("container3Btn");
+        container3Btn.addEventListener("click", function() {
+          window.location.href = "part1-3.html";
+        });
+      </script>
+      <div class="container5">
+        <button id="container4Btn_2">奶奶告诉妹妹,表哥说得对。</button>
+      </div>
+      <script>
+        const container4Btn_2 = document.getElementById("container4Btn_2");
+        container4Btn_2.addEventListener("click", function() {
+          window.location.href = "part1-7.html";
+        });
+      </script>
+    </div>
+   
+    <div class="footer">Created by Youngjin. It shouldn't be copied or reproduced in any way. 2023© All rights reserved</div>
+  </body>
+</html>

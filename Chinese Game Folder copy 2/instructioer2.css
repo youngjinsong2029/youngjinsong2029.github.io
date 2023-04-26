@@ -1,0 +1,25 @@
+body
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.my-button {
+    background-color: blue;
+    color: white;
+    height: 50px;
+    width: 200px;
+    border: none;
+    font-size: large;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    font-size: large;
+    font-family: Verdana;
+}
+

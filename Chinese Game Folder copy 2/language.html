@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Language</title>
+    <link rel="stylesheet" href="english.css">
+    <link rel="stylesheet" href="language.css">
+    <script src="english.js"></script>
+    <script src="chinese.js"></script>
+  </head>
+  <body>
+    <h1>What kind of language do you prefer?</h1>
+    <h2>你喜欢哪种语言？</h2>
+    <button class="Y" id="Eng">English</button>
+    <button class="Y" id="chine">中文</button>
+    <div class="footer">Created by Youngjin. It shouldn't be copied or reproduced in any way. 2023© All rights reserved</div>
+    <script>
+      const engBtn = document.getElementById("Eng");
+      
+      engBtn.addEventListener("click", function() {
+        window.location.href = "Game.html";
+      });
+
+      const chineBtn = document.getElementById("chine");
+      
+      chineBtn.addEventListener("click", function() {
+        window.location.href = "Game2.html";
+      });
+    </script>
+  </body>
+</html>

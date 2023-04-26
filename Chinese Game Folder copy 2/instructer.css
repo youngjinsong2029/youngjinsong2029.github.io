@@ -1,0 +1,22 @@
+h1 {
+    font-size: large;
+    font-family: Verdana;
+    text-align: center;
+}
+
+.my-button button {
+    background-color: blue;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: 25vh;
+    width: 200px;
+    height: 50px;
+    margin: auto;
+    border: none; /* optional */
+    font-size: large;
+  }
+  

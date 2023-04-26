@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<head>
+  <link rel="stylesheet" href="correct5.css">
+  <title>Correct!</title>
+</head>
+<body>
+  <h1>You are smart! It's correct!</h1>
+  <div class="my-button">
+    <button>Go to Part2</button>
+  </div>
+  <script src="instructer.js"></script>
+  <script>
+    const myButton = document.querySelector(".my-button button");
+    myButton.addEventListener("click", function() {
+      window.location.href = "Part2.html";
+    });
+  </script>
+</body>

@@ -1,0 +1,25 @@
+h1 {
+    font-size: large;
+    text-align: center;
+    font-family: Verdana, sans-serif;
+}
+
+p {
+    font-size: large;
+    text-align: center;
+    font-family: Verdana, sans-serif
+}
+
+.Home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 25vh;
+    background-size: cover;
+    width: 170px;
+    height: 70px;
+    margin: auto;
+    margin-bottom: 20px;
+    font-size: 50px;
+  }

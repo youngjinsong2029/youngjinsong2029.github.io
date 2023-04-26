@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Instruction</title>
+    <link rel="stylesheet" href="Realgame5.css">
+    <script src="insructioner.js"></script>
+    <script>
+      function shuffleButtons() {
+        const buttonContainer = document.querySelector('.button-container');
+        for (let i = buttonContainer.children.length; i >= 0; i--) {
+          buttonContainer.appendChild(buttonContainer.children[Math.random() * i | 0]);
+        }
+      }
+    </script>
+  </head>
+  <body onload="shuffleButtons()">
+    <h1>Fifth Question!</h1>
+    <h2>Should you gift this item to Chinese?</h2>
+    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUSEhMVEhUVFRcSFRcXFxIVFRUVFxUXFhUSFRcYHSggGBolGxYVITEhJSktLi4uFx8zODMsNygtLisBCgoKDQ0NDw0NDysZFRkrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrK//AABEIAOEA4QMBIgACEQEDEQH/xAAcAAEAAgMBAQEAAAAAAAAAAAAAAQIEBgcIAwX/xABCEAEAAQICBAcMCQMFAQAAAAAAAQLwAxEEB1TRBRIhMZGTsQYTFjI1QVFyc8HS4RciIzNhcYGhshQkg0SCkqLCFf/EABUBAQEAAAAAAAAAAAAAAAAAAAAB/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A7KAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD8Lu07o/8A5+jd/wC999ma4w6aeNxIzmKpzmrKeTKmfMD90ciwdcGNV/paI/311blp1s6Rs2H/AN94OtjkX0uaRsuH01/Er9Luk7Lh9NfR4wOvjj/0vaRs2F6eev4kRrf0jk/tsPl/Gv4gdhHII1vaRs2F01/EfS9pGzYXTX8QOvjj/wBL2k8n9rhcv41/ERrf0jZcLpr+IHYBx+Nb+kbNhdNe8+l/SNlwumveDsA4/GuDSNlwvR41fTzo+mHSNlw+fLxq998oOwjj064tI2XD58vGxHynXPpGyYX/ACxAdmGk9wfd7/XziU4mFTg1UcWY4tUzFUVcbPkmM4mMv3hu0SAAAAAAAAAAA0TXR5Oj29H8MRvbQ9dHk6Pb0fwxAcS4Nq5H6EzyX6H5XB8Xd+/9EEVSrJM3d/oibu90HzmE053fNf4Jmm7vsmIu75+kJu73orgqu76FJkCqS7v5Vm7vezBM1Gal+ZbIE5+gz9F3fIqrE3ygtXUxMSeVkVyxaucG9ar5yx6vN9Wntnnd20SrOmHBNWs5Y1Xq09su7cHVZ0wozAAAAAAAAAAGia5/J0e3o/hiN7aJrn8nf5qP4YgOG6DDNqlh6DzMyUFJLu9yckRd3vCJm7uUZ3d9iZm7voUzu79wTKs3d9pkmQUzu798Td715Uzu79wEZmd3f6c8ZgKzKc7u/fAK1vjU+sy+U84N01bx9tV6tHbLu3Bniw4Tq3+9q9Wntl3bgzxYUZoAAAAAAAAADRNc/k7/ADUfxxG9tF1z+TZ9tR/GsHDNB5mdmwNC5mbd/ugpVd3vrVN3fvtVyKTAJzu/0vLKJu73olWagSiqUzfzv5RVIKyqmZMwM1Zi7v8ARKARKLu9y01K1Td+a/zCsvjPO+0y+WXKK3TVt99X6tPbLu3Bniw4Vq3j7Wr1ae2XdeDPFhUZoAAAAAAAAADRdc/k2fbUdlbemja5vJs+2o7KwcL0FnVczB0DmZtd/O/nB8pl85laqVJBOasyZomQWRM3d/urxgCTNMqSCUSQTIImbu/fESRCJiARVd3vovUpTzg3TVxGWLV5vq09su68GeLDhWrmPtavN9Wntl3XgzxYUZoAAAAAAAAADRtcvk2fa0dlbeWj65fJtXtaOyoHCdBhmVsPg9l4gPjVKkrVXd76Z3d+6CJlHGRMl3fyCYWipWFswKlc0TXfvRmCZ6VIm7vl6UyiLu+0Fpu73Rd37oMyQFfOTd3uikG6auPvavVp7Zd14M8WHCtXEfa1flT2u68GeLCjNAAAAAAAAAAaRrj8m1e1o7Km7tI1x+Tava0f+gcJ4PjkZOIx9AnkfXFxAfOuXxmbu/faqr9VIQSZgBmz+AqqO/0cfLz8XPLLj5Txc8+Tn5vx4r89Eg3zWRXoUxh/03fZ+zjjd9/qON3zPC4nF77y58TvvHy5ONxM/rZNCu7+cxCJkDJEXd70gJlCLu/lOYEojnTMogG6auPvavVp7Zd14M8WHCtW/wB9X+UdruvBsfVhRmgAAAAAAAAANI1xeTavxxaOypu74adoWFjUTh42HRi0TyzTXTTVTnHNOU8gPLOjxlHp6CaJnzPRtXcXoHm0XAj8sPDj3IjuL0HZsHq6NwPOE4U+ieiU00T6JejvAzQdmwero3Edxeg7Ng9XRuB5y71PolHe59EvR/gboWzYPV0bkT3GaFs2D1dG4HnCcOfQcR6QjuN0LZ8Hq6Nx4G6Fs+D1dG4HnCcOfQiaPw7HpDwN0LZsHq6Nx4G6Fs+D1dG4Hm3ibjivSXgboWzYPV0bjwM0LZsHq6NwPNuV8iJyek/AzQtmwero3InuM0HZsHq6NwPNuaMnpPwL0HZsHq6Nx4GaDs2D1dG4HJtVmBNWNXlHJEU55eblnn/F3TRqMohi6BwNg4MZYeHTRHoppimP2foRAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP/Z" class="centered-image">
+    <div class="button-container">
+      <div class="container2">
+        <button id="container1Btn">No</button>
+        <script>
+          const container1Btn = document.getElementById("container1Btn");
+          container1Btn.addEventListener("click", function() {
+            window.location.href = "correct5.html";
+          });
+        </script>
+        <div class="container4">
+          <button id="container4Btn_1">Yes</button>
+          <script>
+            const container4Btn_1 = document.getElementById("container4Btn_1");
+            container4Btn_1.addEventListener("click", function() {
+              window.location.href = "wrong.html";
+            });
+          </script>
+        </div>
+      </div>
+    </div>
+    <div class="footer">Created by Youngjin. It shouldn't be copied or reproduced in any way. 2023© All rights reserved</div>
+  </body>
+</html>

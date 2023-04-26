@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="parts.css">
+        <body>
+            <title>Parts</title>
+            
+        </body>
+        <h1>About the Parts of the Question</h1>
+        <p>There are 2 parts of the game</p>
+        <p>The first part of the game is to look at the pciture of sentence and choose the correct answer from 4 given choices. If wrong, then the game will retstart from the beginning. Everytime, the choic will be shuffled.</p>
+        <p>The second part is looking at the given words and you need to unscramble it in order to move to the next question. There are also questions to drag and drop the boxes to make the sentence. The rule is same as last, but at least you don't go back to the first part!</p>
+        <p>When you finish both parts, there will be another hidden parts! Wait for it...</p>
+        <button class="Y" id="backBtn">Go back</button>
+
+        <script>
+          const backBtn = document.getElementById("backBtn");
+          
+          backBtn.addEventListener("click", function() {
+            window.location.href = "Game.html";
+          });
+        </script>
+    </head>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Instruction</title>
+    <link rel="stylesheet" href="part1-3.css">
+    <script src="part1-3.js"></script>
+  </head>
+  <body>
+    <div class="header">
+      <button class="Home" onclick="window.location.href='Game.html'">Home</button>
+    </div>
+    <h5>22</h5>
+    
+    <h1>Here is the instruction of the game!</h1>
+    <p>You need to look at the picture and there will be 4 given choices. You need to select the right one to continue. If there is a wrong one, then the game will stop.</p>
+    <p>For example:</p>
+    <h2>What is the Chinese character of this given picture?</h2>
+    <img src="https://images.immediate.co.uk/production/volatile/sites/30/2020/08/knife-head_0-e1436fc.png" alt="Example Image" class="centered-image">
+    <div class="button-container">
+      <div class="container2">
+        <button id="container1Btn">刀</button>
+        <script>
+          const container1Btn = document.getElementById("container1Btn");
+          container1Btn.addEventListener("click", function() {
+            window.location.href = "instructer3.html";
+          });
+        </script>
+        <div class="container4">
+          <button id="container4Btn_1">道</button>
+          <script>
+            const container4Btn_1 = document.getElementById("container4Btn_1");
+            container4Btn_1.addEventListener("click", function() {
+              window.location.href = "instruction2.html";
+            });
+          </script>
+        </div>
+      </div>
+      <div class="container3">
+        <button id="container3Btn">到</button>
+      </div>
+      <script>
+        const container3Btn = document.getElementById("container3Btn");
+        container3Btn.addEventListener("click", function() {
+          window.location.href = "instruction2.html";
+        });
+      </script>
+      <div class="container5">
+        <button id="container4Btn_2">岛</button>
+      </div>
+      <script>
+        const container4Btn_2 = document.getElementById("container4Btn_2");
+        container4Btn_2.addEventListener("click", function() {
+          window.location.href = "instruction2.html";
+        });
+      </script>
+    </div>
+    <div class="container">
+      <button id="instruction-btn">Next</button>
+    </div>
+    <script>
+      const instructionBtn = document.getElementById("instruction-btn");
+      instructionBtn.addEventListener("click", function() {
+        window.location.href = "part1-4.html";
+      });
+    </script>
+    <div class="footer">Created by Youngjin. It shouldn't be copied or reproduced in any way. 2023© All rights reserved</div>
+  </body>
+</html>

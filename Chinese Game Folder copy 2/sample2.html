@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Draggable Boxes Example</title>
+	<link rel="stylesheet" type="text/css" href="sample2.css">
+</head>
+<body>
+	<div class="container">
+		<div class="box" draggable="true">Q</div>
+		<div class="box" draggable="true">W</div>
+		<div class="box" draggable="true">E</div>
+		<div class="box" draggable="true">R</div>
+		<div class="box" draggable="true">T</div>
+		<div class="box" draggable="true">Y</div>
+    <div class="box" draggable="true">U</div>
+		<div class="box" draggable="true">W</div>
+	</div>
+
+	<div class="target-container">
+		<div class="target-box"></div>
+		<div class="target-box"></div>
+		<div class="target-box"></div>
+		<div class="target-box"></div>
+		<div class="target-box"></div>
+		<div class="target-box"></div>
+		<div class="target-box"></div>
+		<div class="target-box"></div>
+	</div>
+
+	<button id="check-button">Check</button>
+  <button id="reset-button">Reset</button>
+  <script>
+    const container1Btn = document.getElementById("container1Btn");
+    container1Btn.addEventListener("click", function() {
+        window.location.href = "sample1.html";
+    });
+</script>
+	<button id="correct-button" style="display:none">Correct!</button>
+	<button id="incorrect-button" style="display:none">Try Again</button>
+
+	<script src="sample2.js"></script>
+</body>
+</html>

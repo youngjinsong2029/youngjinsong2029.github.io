@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+   <head>
+    <meta charset="UTF-8">
+    <body>
+
+        <title>Part2-2</title>
+        <h1>Over here, you will having a questions to drag and drop the boxes to make a sentence in a correct order.</h1>
+        <p>Also if you get wrong, the reset button will disappear! And after you need to click "Incorrect" button </p>
+        <p>Here is the example!</p>
+        <title>Draggable Boxes Example</title>
+	<link rel="stylesheet" type="text/css" href="part2-2.css">
+</head>
+<body>
+	<div class="container">
+		<div class="box" draggable="true">我和</div>
+		<div class="box" draggable="true">很有</div>
+        <div class="box" draggable="true">和</div>
+		<div class="box" draggable="true">韩国</div>
+		<div class="box" draggable="true">好吃</div>
+		<div class="box" draggable="true">友觉</div>
+		<div class="box" draggable="true">得</div>
+        <div class="box" draggable="true">趣</div>
+		<div class="box" draggable="true">韩国</div>
+		<div class="box" draggable="true">菜是</div>
+        <div class="box" draggable="true">很</div>
+        <div class="box" draggable="true">我的</div>
+        <div class="box" draggable="true">朋</div>
+	</div>
+
+	<div class="target-container">
+        <div class="target-box"></div>
+		<div class="target-box"></div>
+		<div class="target-box"></div>
+		<div class="target-box"></div>
+		<div class="target-box"></div>
+		<div class="target-box"></div>
+		<div class="target-box"></div>
+		<div class="target-box"></div>
+		<div class="target-box"></div>
+        <div class="target-box"></div>
+        <div class="target-box"></div>
+        <div class="target-box"></div>
+        <div class="target-box"></div>
+	</div>
+
+	<button id="check-button">Check</button>
+	<button id="reset-button">Reset</button>
+	<button id="correct-button" style="display:none">Correct!</button>
+	<button id="incorrect-button" style="display:none">Incorrect</button>
+
+	<script src="part2-2.js"></script>
+    <div class="container2">
+        <button id="instruction-btn">Next</button>
+      </div>
+      <script>
+        const instructionBtn = document.getElementById("instruction-btn");
+        instructionBtn.addEventListener("click", function() {
+          window.location.href = "DragAndDrop.html";
+        });
+      </script>
+
+
+    </body>
+   </head>
+</html>

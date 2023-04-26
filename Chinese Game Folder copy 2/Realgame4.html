@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Instruction</title>
+    <link rel="stylesheet" href="Realgame5.css">
+    <script src="insructioner.js"></script>
+    <script>
+      function shuffleButtons() {
+        const buttonContainer = document.querySelector('.button-container');
+        for (let i = buttonContainer.children.length; i >= 0; i--) {
+          buttonContainer.appendChild(buttonContainer.children[Math.random() * i | 0]);
+        }
+      }
+    </script>
+  </head>
+  <body onload="shuffleButtons()">
+    <h1>Fourth Question!</h1>
+    <h2>What is NOT the reason why you should not give this gift to Chinese?</h2>
+    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxEHEBITBxMTFhUXFhYWFRcXFRgZGBYYGBUWFhcWGBMaHygsGyYlHRcWIjEtKSorLi4uFx8zODMsNygtLisBCgoKDg0NDg0OFSsZFRktKysrKysrKy0rKysrKysrKzc3Ky03LTc3LSsrKysrKystKysrKysrKysrKysrKysrK//AABEIAPsAyQMBIgACEQEDEQH/xAAcAAEAAgMBAQEAAAAAAAAAAAAABgcDBAUBAgj/xABIEAACAQMBBAYFBQwJBQAAAAAAAQIDBBEFBhIhMRNBUWFxgQciMpGhIzNCcrEUNENSYoKSorLB0fAkNVNjc8LT4fEVJURks//EABUBAQEAAAAAAAAAAAAAAAAAAAAB/8QAFREBAQAAAAAAAAAAAAAAAAAAABH/2gAMAwEAAhEDEQA/ALoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPJSUE3NpJcW3yXiwPQcLV9q7bTYtqSm+yLXbxbl1GpsztlT1+vKjRisqm6m9GakuElFxfDg/WXxAlAAAAAAAAAAAAAAAAAAAAAAAAABgvLynYwc72cYRXOUmkvDiBnNbUdQo6ZTdTUKkacFzlJ4Xgu19yK11n0tSdRw2dt1UiuHSVM+t3qmmsLxkm+wg20W0NfWp05atNtzbVOEU1uLKTUY8cdQE+209JapwUNmJrLzvVpQeIJJ+zGS7nxa7OeeFe1NvLu9juX1aVTrW97OevklnBqQlO2rS6ZR6PDXFp72erd7O3Ju1LCnqkU7eHFdX0fDK9n7PAo4lxqf3ZxvHUXZycPJLCLK9BtinVua85wbUI04JSy2pNSm93mktyHPtZXl/0lq9y6g4cOEd3GV+S+TXejFpmoOzqRqaXN0akeMXHl4Ndf8APMD9TggWxHpGp6xu0dZ3aVxyT5Qq98X1Pu/4J6QADk7Ua5T2ftp1rhrKTUE/pSxw4di5vuA5+2G2VHZqOJbsqr5RcsKPY5P9y4+HMi+zfpXjfVo09UjTjGTSU4by3W3hOUZN5XfngVNrF/PU6sq17KTlJt5zndz+Mu//AGNBZzwXHnw5SXaij9bA0NAuVeWlvUjLe3qNN73a9xZfHvyb5AAAAAAAAAAxnkc7UtetNK/rCvSg+xyW95QXF+4DonjeOZXur+li1tsrTKdSs+2XycPjl/BEL130h3GuQlTuJdFTksSjSTSkn1Sm3n3PD7AJhtX6TI0V0ezGKk84dSUXuRXDjFPG918Xw4deSttZ1K51erGWq1Z1XjGWoqMI/SwopKPuy8GhTvo0linvVJN8OGF4JI7Oj6RW1KpCElvTk/VguEY9eZPu593eBq0qHTLC9WmupcHLuXYvtMsKiUfVxGKzx5cP3Hl/dxsm1mM2m0t3lLi1vJ9j7Th1rh1cdJ1cl1LyKOnU1SFP5qOe/OM+fNmfT9dhSl8rFrKxvL1scV14z1I4G/2o8i99pU1mT4JJZbfYl1giwaV1G8hiruVacu5OOf8AK/icTVNjYV8z0iW7LnuSfDyn1efvRj0bZi+qzi6UegbWflG4ya6/kUnJpd8cEkerWOhJRvrj7qrL2lRi404/Wkm84xh7rz+SEiu6iqWEuj1SDXj9qf70SzQ9tr7S4qNlc78FyhWj0iS7FLKaOxqNxS12C6SFKVP6O4kkvzlxz5kF1bQalg3KxbnDs+lHxS5+QVPKnpYvvZVO0UmuEvlePgnw+JD9e1u41qfSavUcmur2ej+rB8/54PmR6N3OXqrjnqxl57l2nd0jZC61X16q6OHXKfD7f+e4Di1aqTznL/GSxnulHrPiEuzgufcix7fZ200Gmql1ODljhJyTa4dbfJ9WEs/vhu0N1Rva7npyxHCTeMb0ln1kny4YXkBenoq1BX+l0VHGaTlSljti95e+MovzJcV36D3/ANvrL/2pf/GgWIQAAAPG8cz0jnpFuJWulXkqOc9Hu8OyUowfwkwOJtB6VbPTZOGnJ3E1wbi92kn/AIjzveSa7yJX/pNvNTWNOnToPsjFNv8APnn4JFXVJYZ8KoBJtT2gvblv/qFevJPqdSTj+jnBx3Xya8ruVRYm20fCmBtOZ4pb3L+fMwJmSnBz9hNgSPTY0LPi6lOU+3eTx3JEy068WkUreUeDr/KVZLjLoMuMIwX5XGb+rFeFWtOnwfDPH/Yn1tVWu29utPcXVpUYUalFyjGeKeVGcFJrfi1jOOKfMo4FbZS8hL+i05V4t8KtJb8JrtbXs+EsNBbM16X9ZToUF/eVE5+VKnvSfuR1LrTZ233/ADoUF/eVYKT8KcXKUvKJyq+p2ll96wlcT6pTTpUU+3o09+fm4eAG7YaPbVG1bQr3Uo8ZPhb0YrtlLLaXjKJmqbRUNJTjaODl1ws10VP8+8eZ1OH4nDh7RFdU1mvqaUbufqLjGnFKFKPhSjheby+8xaZpNxqzxpdGrV484QlKK8ZpYXm0Bu6ptFX1FODahTfF06acYy6szeW6j75uRyHPsJppvovv7rDvXRoLr35781+ZTyvfJEp030VWdDD1KrXrPrUd2jB+S3pfrICqLW/qWct62k4vr7H9aPWSGw2qp1Fi+Tg+1JuL/evj4luWWy+n2GPuWzt01ylOCqS/Tq7z+Jmu9nLK+++7S2l39DBPylFJ/EQVlDaK1ocYyg328ZP3YNTWNvqt1mNksLh60u7sj1fzwJ3e+ijTrpZoKtR+pV3l7qql8GjmU/RDbwk+mvKrj1KNGKl+m5NfqgVbc3NS8lvXc3J9rfLwXV5Hb2Z2Tu9omnY02qfXWnmNNLul9N90c+XMt3RNhNP0pp29DpJrHyld9I8rk1DChF+ESXUqOfb4gc/ZDQqezduqNo21lynOXOc2knLH0ViKSXYlz5neNV1uqksv4GejLK481zwB9gAgGnrOnx1a3rUK/s1KcoPu3lhPyeH5G4AKy1HYDT9UnKM6fQVklvxoz3d1tZyoPMWn1Pd4+OURu/8ARBJP+gXSx2VaTz+nB/5S7a1GNdYqpPmu9Z7H1eRzv+lzt0/uSq5dkauGvDfik/N7z8SijK3oq1Cn81K1n4VZJ/rwX2nNrej7VaT+9JPvjUoy+yZfk3UpLN9Qku10vlV5Rit5/oo+berQum1b1YtrnHPrR+tHq8wKEpbDan+Es6yXhF59zZtLZXUaXtWdx5UpP9lMvj7k7GPuQQULR2L1G5eVa1k/y4dH+20dCh6M9QuPnlRp/XqwfwpuRdStH1syRtkuYhVRW3olqtf0m7ow/wAOlUqftbh27P0XWNDjd1Lir2rMacfdFN/rFidCkfEoxXMFRyx2V0/T8fctpQyuKlOPSyT7d6q5NHZc20k+S5LqXguoyS3eo+N5Io8SyfcaLkfPS45Bb1XkBmUIw9p+4Kr/AGSPYW6XzrXvM8asY/NLPguHvYRhVGdX2zNG2jT4z97DqSl1qPxfvPMwjxk8vtfED7VZfgIuXfyXvPHCVT56XD8WP8T5ldJ+zlnMuNbp7zp0W6lT+yorfms8t7HCC4c5OK7wOlWrqjF7vBLnj+eJuWcHCC6Tg3xa7M9XlyOfpdjVnJVNT3Y49ilF7yj2SnP6Uu5erH8p4Z1yKAAgBgAYp0t76Ul5mGpZuXKpNG2AOPcaRVqexcTXv/iR/V9irjUkuluYyw8x31J7r5ZXPD4vkTgAVpT2M1ey/q++XhOU5rwxUUseRuU7TaK3+lYVF+V0kX71w+BPwBCI19ch87Z2kvq3bj+1TZkheav+E0+n5XsP9MmYFEMldas/Z0+l53sf9NnnS6u//AtV43n8KJNAWiDzhrU/YtbFeNzUf2UjVqWWvy+bpaYvGpWf+VFhAUVu7HaP6MNL/SrBWu0i9qGmPt9at/EsgEorhUtoo+1bac/CrUX2sxyo7SSmmqFgopcYdJJ5797OUWWAK5nR2ikvk6GnRffUqP8AejXr6TtHc8OktqX+Hu/bOMizgBWFLYjULh51mp0y64TuKm4/zIbqJlo9jW0ymqdrRtacF9GmnFeOEd0AYKcqv4SMPKT/AIGZd56AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//2Q==" class="centered-image">
+    <div class="button-container">
+        <div class="container2">
+          <button id="container1Btn">
+            否</button>
+          <script>
+            const container1Btn = document.getElementById("container1Btn");
+            container1Btn.addEventListener("click", function() {
+              window.location.href = "wrong.html";
+            });
+          </script>
+          <div class="container4">
+            <button id="container4Btn_1">
+                诽谤</button>
+            <script>
+              const container4Btn_1 = document.getElementById("container4Btn_1");
+              container4Btn_1.addEventListener("click", function() {
+                window.location.href = "wrong.html";
+              });
+            </script>
+          </div>
+        </div>
+        <div class="container3">
+          <button id="container3Btn">邪恶的</button>
+        </div>
+        <script>
+          const container3Btn = document.getElementById("container3Btn");
+          container3Btn.addEventListener("click", function() {
+            window.location.href = "wrong.html";
+          });
+        </script>
+        <div class="container5">
+          <button id="container4Btn_2">无邪恶的</button>
+        </div>
+        <script>
+          const container4Btn_2 = document.getElementById("container4Btn_2");
+          container4Btn_2.addEventListener("click", function() {
+            window.location.href = "correct4.html";
+          });
+        </script>
+        </div>
+      </div>
+    </div>
+    <div class="footer">Created by Youngjin. It shouldn't be copied or reproduced in any way. 2023© All rights reserved</div>
+  </body>
+</html>

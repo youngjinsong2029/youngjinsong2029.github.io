@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="SentenceGame.css">
+    <meta charset="UTF-8">
+  <title>Button Example</title>
+  <style>
+    #correct-button, #incorrect-button {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+    <h1>First Question!</h1>
+    <h1>Given words:</h1>
+    <p>和,。语,难,中文,不一样,中文,法,语比,法</p>
+  <label for="sentence-input">Type the correct sentence using given words:</label>
+  <input type="text" id="sentence-input">
+  <button id="check-button">Check</button>
+  <button id="correct-button">Correct</button>
+  <button id="incorrect-button">Incorrect</button>
+
+  <script>
+    const correctSentence = "法语和中文不一样法语比中文难。";
+    const checkButton = document.getElementById("check-button");
+    const correctButton = document.getElementById("correct-button");
+    const incorrectButton = document.getElementById("incorrect-button");
+    const sentenceInput = document.getElementById("sentence-input");
+
+    let hasGuessedIncorrectly = false;
+
+    checkButton.addEventListener("click", function() {
+      if (hasGuessedIncorrectly) {
+        return;
+      }
+
+      const userInput = sentenceInput.value;
+      if (userInput === correctSentence) {
+        correctButton.style.display = "inline-block";
+        incorrectButton.style.display = "none";
+      } else {
+        correctButton.style.display = "none";
+        incorrectButton.style.display = "inline-block";
+        sentenceInput.disabled = true;
+        hasGuessedIncorrectly = true;
+      }
+    });
+
+    correctButton.addEventListener("click", function() {
+      window.location.href = "SentenceGame2.html";
+    });
+
+    incorrectButton.addEventListener("click", function() {
+      window.location.href = "middle.html";
+    });
+  </script>
+
+  <div class="container">
+  </div>
+
+  <script src="SentenceGame.js"></script>
+</body>
+</html>

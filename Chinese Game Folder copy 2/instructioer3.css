@@ -1,0 +1,76 @@
+.container button {
+    background-color: blue;
+    color: white;
+    font-size: 40px;
+    display: block;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 300px;
+    clear: both;
+    float:right;
+  }
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #f5f5f5;
+    padding: 20px;
+    text-align: center;
+    
+        
+      }
+
+      h1 {
+        text-align: center;
+        font-family: Verdana;
+        font-size: large;
+      }
+
+      h1 {
+        text-align: center;
+        font-family: Verdana;
+        font-size: large;
+      }
+
+      p {
+        text-align: center;
+        font-family: Verdana;
+        font-size: large;
+      }
+
+      p2 {
+        text-align: center;
+        font-family: Verdana;
+        font-size: large;
+      }
+
+      .sentence-input {
+        text-align: center;
+        font-family: Verdana;
+        font-size: large;
+      }
+
+
+      .header {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        background-color: #f5f5f5;
+        padding: 10px;
+        text-align: center;
+       
+        border: black;
+      }
+    
+      .header button {
+        font-size: 20px;
+        width: 75px;
+        height: 30px;
+        margin-right: 100px;
+        color:black;
+        
+       
+      }

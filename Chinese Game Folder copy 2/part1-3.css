@@ -1,0 +1,107 @@
+.centered-image {
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .container2 button,
+  .container3 button {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 40px;
+  }
+  
+  .container2 {
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    margin-top: 10px;
+  }
+  
+  .container3 {
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    margin-top: 10px;
+  }
+
+
+  
+  .container button {
+    background-color: blue;
+    color:white;
+    float: right;
+    font-size: 40px;
+    }
+    .container5 > button {
+        text-align: center;
+        font-size: 40px;
+        text-align: center;
+        margin-top: 10px;
+        text-align: center;
+      }
+
+
+    h1 {
+        font-family: Verdana, sans-serif;
+        font-size:large;
+        text-align: center;
+    }
+
+    p {
+        font-family: Verdana, sans-serif;
+        font-size: large;
+        text-align: center;
+    }
+
+    h2 {
+        font-family: Verdana, sans-serif;
+        font-size: large;
+        text-align: center;
+    }
+
+
+  
+  .footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #f5f5f5;
+    padding: 20px;
+    text-align: center;
+
+    
+  }
+
+  img {
+    width: 200px;
+    height: 150px;
+  }
+  
+  
+  .header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: #f5f5f5;
+    padding: 10px;
+    text-align: center;
+   
+    border: black;
+  }
+
+  .header button {
+    font-size: 20px;
+    width: 75px;
+    height: 30px;
+    margin-right: 100px;
+    color:black;
+    
+   
+  }

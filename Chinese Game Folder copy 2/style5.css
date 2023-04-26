@@ -1,0 +1,118 @@
+.container {
+    width: 800px;
+    margin: 0 auto;
+  }
+  
+  .word-container,
+  .letter-container {
+    display: inline-block;
+    vertical-align: top;
+    width: 65px;
+    height: 400px;
+    background-color: #f0f0f0;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .word {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    text-align: center;
+    line-height: 60px;
+    font-size: 24px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    cursor: move;
+  }
+  
+  .letter-box {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    text-align: center;
+    line-height: 60px;
+    font-size: 24px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    cursor: move;
+  }
+  
+  .result-container {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+  }
+  
+  .buttons {
+    margin-top: 20px;
+  }
+  
+  .button {
+    display: inline-block;
+    padding: 10px;
+    background-color: #ccc;
+    border: none;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  .correct-button {
+    background-color: #4CAF50;
+  }
+  
+  .correct-button:hover {
+    background-color: #3e8e41;
+  }
+  
+  .try-again-button {
+    background-color: #f44336;
+  }
+  
+  .try-again-button:hover {
+    background-color: #c62828;
+  }
+  
+  .clearfix {
+    clear: both;
+  }
+  
+  /* Add the following rules to lineup 8 boxes */
+  .word-container, .letter-container {
+    box-sizing: border-box;
+    padding-top: 80px;
+    padding-bottom: 20px;
+  }
+  
+  .word-container .word:not(:last-child),
+  .letter-container .letter-box:not(:last-child) {
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .word-container .word:nth-child(4n),
+  .letter-container .letter-box:nth-child(8n) {
+    margin-right: 0;
+  }
+  
+  /* Add the following rules to center the word-container and letter-container */
+  .container {
+    text-align: center;
+  }
+  
+  .word-container:first-child {
+    margin-left: 20px;
+  }
+  
+  .letter-container:last-child {
+    margin-right: 20px;
+  }

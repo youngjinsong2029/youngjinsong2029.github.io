@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Hi</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Can you name the game?</h1>
+      <h3>22</h3>
+      <h4>22</h4>
+      <h5>22</h5>
+      <h2>Welcome to my Chinese Game!</h2>
+      <p>Have fun with this game!</p>
+      <p>Click "Play" to play</p>
+      <button class="Y" id="instructionBtn">Play</button>
+      <button class="Z" id="instruction2Btn">Part1</button>
+      <button class="F" id="instruction3Btn">Part2</button>
+    </div>
+    <div class="header" id="page-header">
+      <button class="Home" onclick="window.location.href='Game.html'">Home</button>
+      <button class="About" onclick="window.location.href='about.html'">About</button>
+      <button class="Creator" onclick="window.location.href='creater.html'">Creator</button>
+      <button class="Parts" onclick="window.location.href='parts.html'">Parts</button>
+    </div>
+    <div class="   release-note">
+      <h3><u>   Alpha Note 9.7</u></h3>
+      <p>     Here are the latest updates:</p>
+      <ul>
+        <li>Added new feature:</li>
+        <li>Added 2 parts</li>
+        <li>Added "Teacher's Note"</li>
+        <li>Added color(Pink, yellow and skyblue)</li>
+        <li>Added Release Note</li>
+        <li>Added ??? parts</li>
+        <li>Added home button</li>
+        <li>Added footer &amp; header</li>
+        <li>Added shuffle finction in ???</li>
+        <li>Added new GUI</li>
+        <li>Added a button to go to the part 1 and 2</li>
+        <li>Fixed issue:</li>
+        <li>In ??? Parts</li>
+        <li>2 boxes are added together</li>
+        <li>Correct, Incorrect button not working in Sentence Game</li>
+        <li>Make it to www. form</li>
+        <li>Improved performance</li>
+        <li>Nothing yet</li>
+      </ul>
+    </div>
+    
+    <ul>
+      <h6>Teacher's Note</h6>
+      <li class="right"></li>
+      <p></p>
+      <p></p>
+    </ul>
+
+    <script>
+      const instructionBtn = document.getElementById("instructionBtn");
+      instructionBtn.addEventListener("click", function() {
+        window.location.href = "instruction.html";
+      });
+
+      const instruction2Btn = document.getElementById("instruction2Btn");
+      instruction2Btn.addEventListener("click", function() {
+        window.location.href = "part1-3.html";
+      });
+
+      const instruction3Btn = document.getElementById("instruction3Btn");
+      instruction3Btn.addEventListener("click", function() {
+        window.location.href = "part2.html";
+      });
+    </script>
+  </body>
+</html>
